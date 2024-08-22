@@ -1,0 +1,60 @@
+We can check if an object is manifold by using the 3D print toolbox add-on taht comes with Blender. Even if you don't intend to 3D print, this add-on can be useful.
+
+Enable it just like any other add-on from the preferences add-on section. Once enabled, open the right-hand side tool panel in the 3D viewport by pressing N and find the "3D-Print" tab.
+
+In the clean-up section, you will find a "make manifold" button that will help you solve several potential problems with your mesh object.
+
+
+
+
+Workflow:
+		merge by distance
+ 
+		1. deresolute object(reduce polygons/try out optimal)/in objectmode   -> blender reduce faces from right menu (decimate function) 
+		2. solidify object -> in blender 3D printing add-on
+		3. adjust size -> select object and press s ( scale ) 
+		4. Run matlab stl check tool
+		
+
+Matlab Criteria:
+non manifold edges
+non manifold vertices
+duplicate Vertices
+Slivers
+Normal Transition Edges
+Free Triangles
+T-Vertices
+
+study voxel remesh
+
+cmake -DCMAKE_CXX_COMPILER=C:\MinGW\bin\g++ -DCMAKE_C_COMPILER=C:\MinGW\bin\gcc -G "MinGW Makefiles"  .. -DCMAKE_BUILD_TYPE=Release
+
+		Matlab Packages:
+			Parallel computing
+			antenna
+			DSP system
+			Phased array system
+			Radar
+			signal processing
+			
+			
+
+
+300 is original number of pulses
+Updated range doppler im: [2770x300 double]
+original range doppler im: [5670x300 double]
+
+
+Tasks:
+*cherry pick object - done
+*rescale everythign to 5 cm - done
+*calculate first 25 object rcs _ Keep calculating the rest (as much as possible) - submitted no progress 
+*run oscar sampling + existing resnet on 5 cm object
+
+
+Notes:
+
+* write lit review
+* add images
+* fix images 
+* fix AI writing 
